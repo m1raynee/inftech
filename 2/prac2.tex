@@ -1,61 +1,11 @@
 \documentclass[14pt,a4paper]{extarticle}
-\usepackage[english,russian]{babel}
-\usepackage{graphicx}
-\usepackage{tabularx}
+\usepackage{../templates/preamble}
 
-\usepackage{fontspec}
-\setmainfont{Times New Roman}
-
-% Margins
-\usepackage[
-    top=20mm,
-    bottom=20mm,
-    left=30mm,
-    right=10mm
-]{geometry}
-
-\usepackage{setspace}
-\setlength{\parindent}{15mm}  % Paragraph indent
-\setstretch{1.5}  % Line height
-
-\usepackage{titlesec}
-\titleformat{\section}[hang]{\normalfont\bfseries}{\thesection}{}{}
-\titlespacing{\section}{15mm}{0pt}{0pt}
-
-\usepackage{caption}
-\usepackage{subcaption}
-\DeclareCaptionLabelSeparator{emdash}{ --- }
-\captionsetup[figure]{name={Рисунок},labelsep=emdash}
+\newcommand{\reportof}{практической работе №2}
+\newcommand{\theme}{Полиномы и интерполяция.}
 
 \begin{document}
-\begin{titlepage}
-    \begin{center}
-        {\bfseries
-        МИНОБРНАУКИ РОССИИ\par
-        САНКТ-ПЕТЕРБУРГСКИЙ ГОСУДАРСТВЕННЫЙ\par
-        ЭЛЕКТРОТЕХНИЧЕСКИЙ УНИВЕРСИТЕТ\par
-        <<ЛЭТИ>> ИМ. В.И. УЛЬЯНОВА (ЛЕНИНА)\par
-        Кафедра САПР
-
-        \vspace{0.23\textheight}
-        ОТЧЁТ\par
-        по практической работе №2\par
-        по дисциплине <<Информационные технологии>>\par
-        Тема: Полиномы и интерполяция.
-        \vspace{0.28\textheight}
-        }
-        \begin{table}[h!]
-            \begin{tabularx}{\textwidth}{p{60mm}X>{\centering\arraybackslash}p{45mm}}
-                Студент гр. 4352 & \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ & {Даричев Е. М.} \\ [5.4mm]  % Line height
-                Преподаватель    & \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ & {Копец Е. Е.} \\ [5.4mm]
-            \end{tabularx}
-        \end{table}
-
-        Санкт-Петербург\par
-        2025
-    \end{center}
-\end{titlepage}
-\setcounter{page}{2}
+\input{../templates/titlepage.tex}
 
 % document %
 \section*{Цель работы}
